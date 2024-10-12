@@ -1,0 +1,32 @@
+{
+  "homepage": "https://nayiswftw.github.io/DocHealth-AI",
+  "name": "react-javascript",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "React TypeScript on Replit, using Vite bundler",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.7",
+    "gh-pages": "^6.2.0",
+    "react-markdown": "^9.0.1"
+  }
+}
