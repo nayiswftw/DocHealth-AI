@@ -22,7 +22,7 @@ export default function App() {
           </button>
         </div>
 
-        {component === 'Analyze' ? <Image /> : <Chat />}
+        {component === 'Analyze' ? <Chat /> : <Analyze />}
       </main>
     </>
   );
