@@ -4,7 +4,7 @@ import Chat from './components/Chat';
 import Image from './components/Image';
 
 export default function App() {
-  const [component, setComponent] = useState('Chat');
+  const [component, setComponent] = useState('Analyze');
 
   function activeComponent() {
     setComponent((prevComponent) => (prevComponent === 'Chat' ? 'Analyze' : 'Chat'));
@@ -22,7 +22,7 @@ export default function App() {
           </button>
         </div>
 
-        {component === 'Analyze' ? <Chat /> : <Analyze />}
+        {component === 'Analyze' ? <Chat/> : <Image/>}
       </main>
     </>
   );
