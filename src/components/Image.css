@@ -26,6 +26,7 @@ img {
   max-width: 600px;
   margin-top: 20px;
   text-align: left;
+  box-sizing: border-box; 
 }
 
 #image-input {
@@ -37,16 +38,25 @@ img {
   bottom: 0;
 }
 
+
 #image-input > input {
   background: #fff;
   border: 2px solid #4c51bf;
   border-radius: 30px;
-  width: 40vh;
+  width: 100%; 
+  width: 600px;
   padding: 15px;
   color: #4c51bf;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+@media (max-width: 600px) {
+  #image-input > input {
+    width: 60%;
+  }
+}
+
 
 #image-input > button {
   position: relative;
