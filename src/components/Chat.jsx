@@ -14,7 +14,6 @@ function Chat() {
 
     setLoading(true);
     setError("");
-    setAnswer("Loading...");
 
     try {
       const response = await axios({
@@ -37,8 +36,16 @@ function Chat() {
   return (
     <div id="chat">
       <div id="chat-messages">
-        {error && <p className="error">{error}</p>}
+        {error && <p>{error}</p>}
+        {loading ? (
+          <div className="loading-placeholder">
+            <div className="placeholder-box"></div>
+            <div className="placeholder-box"></div>
+            <div className="placeholder-box"></div>
+          </div>
+        ) : 
         <Markdown>{answer || "Ask me anything!"}</Markdown>
+        }
       </div>
       <div id="chat-input">
         <input
